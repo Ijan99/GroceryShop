@@ -1,0 +1,27 @@
+{
+  "name": "grocery-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+
+  "scripts": {
+  "start": "node server.js",
+  "server": "node server.js",
+  "client": "cd ../grocery-frontend && npm start",
+  "dev": "npx concurrently \"npm run server\" \"npm run client\""
+  },
+
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
