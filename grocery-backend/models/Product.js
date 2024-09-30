@@ -19,7 +19,12 @@ const productSchema = new mongoose.Schema({
   },
   expiry_date: {
     type: Date,
-  }
+  },
+  // Optional: Add a low stock threshold field (default: 10)
+  low_stock_threshold: {
+    type: Number,
+    default: 10,
+  },
 });
 
 const Product = mongoose.model('Product', productSchema);

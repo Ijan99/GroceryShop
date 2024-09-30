@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Form, Button, Alert } from 'react-bootstrap';
+import StripeWrapper from './CheckoutButton';
 
 const OrderForm = () => {
   const [customers, setCustomers] = useState([]);
@@ -113,6 +114,8 @@ const OrderForm = () => {
           <div className="mb-3">
             <label>Total Amount: ${totalAmount}</label>
           </div>
+
+          <StripeWrapper amount={totalAmount} />
 
           <Button variant="primary" type="submit">
             Place Order

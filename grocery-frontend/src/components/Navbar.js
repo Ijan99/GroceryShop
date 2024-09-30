@@ -36,6 +36,11 @@ const Navbar = () => {
                 Orders
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/order-history">
+                Order History
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
