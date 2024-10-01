@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+/* Center form containers vertically and horizontally */
+.container {
+  max-width: 500px;
+}
+
+/* Adjust padding for forms */
+form {
+  padding: 20px;
+}
+
+/* Add uniform shadow and rounded corners to cards */
+.card {
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style buttons uniformly */
+button {
+  border-radius: 5px;
+}
+
+/* Add consistent spacing to form labels */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Center-align text in headings */
+.text-center {
+  text-align: center;
+}

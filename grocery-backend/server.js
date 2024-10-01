@@ -4,6 +4,7 @@ const connectDB = require('./config/db');
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const customerRoutes = require('./routes/customerRoutes');
+const authRoutes = require('./routes/authRoutes'); // Import auth routes
 
 dotenv.config();
 
@@ -20,6 +21,9 @@ app.use('/api/orders', orderRoutes);
 
 // Use customer routes
 app.use('/api/customers', customerRoutes);
+
+// Use auth routes
+app.use('/api/auth', authRoutes);
 
 app.get('/', (req, res) => {
   res.send('API is running...');

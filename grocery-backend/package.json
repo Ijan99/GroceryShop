@@ -2,22 +2,21 @@
   "name": "grocery-backend",
   "version": "1.0.0",
   "main": "index.js",
-
   "scripts": {
-  "start": "node server.js",
-  "server": "node server.js",
-  "client": "cd ../grocery-frontend && npm start",
-  "dev": "npx concurrently \"npm run server\" \"npm run client\""
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "cd ../grocery-frontend && npm start",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\""
   },
-
-
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.9.0",
     "mongoose": "^8.6.3"
   },
